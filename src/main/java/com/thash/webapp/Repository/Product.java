@@ -7,24 +7,24 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class Product {
 
-    private String productId;
+    private int productId;
     private String name;
     private int quantity;
 
     public Product() {
     }
 
-    public Product(String productId, String name, int quantity) {
+    public Product(int productId, String name, int quantity) {
         this.productId = productId;
         this.name = name;
         this.quantity = quantity;
     }
 
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
