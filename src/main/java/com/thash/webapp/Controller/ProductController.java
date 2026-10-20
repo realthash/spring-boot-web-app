@@ -29,8 +29,13 @@ public class ProductController {
     @PostMapping( "/cart")
     public void addProduct(@RequestBody Product body){
         System.out.println(body);
+        ps.addProduct(body);
+
     }
 
-
+    @PutMapping("/cart")
+    public void updateProduct(@RequestBody Product product){
+        ps.updateProduct(product);
+    }
 
 }

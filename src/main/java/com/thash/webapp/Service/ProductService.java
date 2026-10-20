@@ -27,4 +27,29 @@ public class ProductService {
             System.out.println(productId);
         return list.stream().filter(n-> n.getProductId() == productId).findFirst().orElse(new Product( 5, "dj",500));
     }
+
+    public void addProduct(Product product){
+        list.add(product);
+    }
+
+    public void updateProduct(Product product){
+        int index = -1;
+
+        System.out.println(product);
+
+        for (int i = 0; i < list.size(); i++) {
+            if(product.getProductId()==list.get(i).getProductId()){
+                index=i;
+            }
+        }
+
+        if (index!= -1){
+            list.set(index, product);
+        }else{
+            System.out.println("item not found");
+        }
+
+
+    }
+
 }
