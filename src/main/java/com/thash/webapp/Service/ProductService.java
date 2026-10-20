@@ -48,8 +48,20 @@ public class ProductService {
         }else{
             System.out.println("item not found");
         }
-
-
     }
 
+    public void deleteProduct(int id) {
+        int index = -1;
+
+        for (int i = 0; i < list.size(); i++) {
+            if(list.get(i).getProductId() == id){
+                index = i;
+            }
+        }
+        if (index != -1){
+            list.remove(index);
+        }else{
+            System.out.println("Item " + id + " not found.");
+        }
+    }
 }

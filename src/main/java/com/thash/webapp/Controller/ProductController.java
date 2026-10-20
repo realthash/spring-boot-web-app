@@ -38,4 +38,9 @@ public class ProductController {
         ps.updateProduct(product);
     }
 
+    @DeleteMapping("/cart/{id}")
+    public void deleteProduct(@PathVariable int id){
+        ps.deleteProduct(id);
+    }
+
 }
