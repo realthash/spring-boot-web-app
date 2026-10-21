@@ -1,12 +1,16 @@
 package com.thash.webapp.model;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Controller;
 
 
 @Controller
+@Entity
 public class Product {
 
+    @Id
     private int productId;
     private String name;
     private int quantity;

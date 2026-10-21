@@ -21,6 +21,7 @@ public class ProductController {
     public List<Product> getProducts(){
             return ps.getProductsList();
     }
+
     @GetMapping( "/cart/{id}")
     public Product getProductById(@PathVariable int id){
         return ps.getProductById(id);
