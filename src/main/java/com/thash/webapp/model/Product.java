@@ -1,4 +1,4 @@
-package com.thash.webapp.Repository;
+package com.thash.webapp.model;
 
 
 import org.springframework.stereotype.Controller;

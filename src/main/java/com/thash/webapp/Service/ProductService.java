@@ -1,7 +1,7 @@
 package com.thash.webapp.Service;
 
 
-import com.thash.webapp.Repository.Product;
+import com.thash.webapp.model.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package com.thash.webapp.Controller;
 
-import com.thash.webapp.Repository.Product;
+import com.thash.webapp.model.Product;
 import com.thash.webapp.Service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
